@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "eslint": "^8.33.0",
+    "jsdoc": "^4.0.0",
     "webpack": "^5.75.0"
   },
   "dependencies": {
