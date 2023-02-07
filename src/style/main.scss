@@ -1,0 +1,143 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+@import 'null.scss';
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.d_none {
+  display: none;
+}
+
+.gallery {
+  /* padding: 0 15px; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.gallery::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.gallery__body {
+  padding: 0 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form {
+  font-size: 30px;
+  width: 70%;
+  height: 150px;
+  margin: 50px auto;
+  border: 2px solid rgb(61, 58, 58);
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 20px #000;
+  position: relative;
+}
+
+
+.label {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+}
+.download {
+  position: absolute;
+  bottom: -60px;
+  padding: 15px 30px;
+  background-color: rgb(41, 149, 59);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 0px #000;
+  /* text-transform: uppercase; */
+  transition: all 0.5s ease 0s;
+  /* border: 1px solid #000; */
+}
+.download:hover {
+  background-color: rgb(57, 182, 78);
+  box-shadow: 0 3px 0px #000;
+  bottom: -65px;
+  transition: all 0.5s ease 0s;
+}
+.gallery__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery__row .row__item:not(:nth-child(4n+1)) {
+  margin-left: 2em;
+}
+
+.row .row__item:nth-child(n+5) {
+  margin-top: 2em;
+}
+
+.row__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(25% - 2em);
+  height: 180px;
+  box-shadow: 0 10px 20px #000;
+  background-color: rgb(133, 129, 129);
+}
+
+.absolute {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  transition: all 1s ease 0s;
+}
+
+.zoom {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  background-color: rgb(133, 129, 129);
+  border: 15px solid rgb(133, 129, 129);
+  z-index: 2;
+  transition: all 1s ease 0s;
+}
+
+.row-item__delete {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 25px;
+  border: 2px solid rgb(182, 171, 171);
+  padding: 10px 17px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.row-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid rgb(134, 130, 130);
+  /* position: relative; */
+}
