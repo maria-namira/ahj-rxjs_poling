@@ -1,19 +1,30 @@
 {
-  "devDependencies": {
-    "eslint": "^8.33.0",
-    "jsdoc": "^4.0.0",
-    "webpack": "^5.75.0"
-  },
-  "dependencies": {
-    "cli": "^1.0.1"
-  },
   "name": "ahj-rxjs_poling",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "lint": "eslint .",
+    "test": "jest --testPathPattern=./src/",
+    "coverage": "jest --coverage",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
+    "doc": "jsdoc -c jsdoc.conf.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maria-namira/ahj-rxjs_poling.git"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/maria-namira/ahj-rxjs_poling/issues"
+  },
+  "homepage": "https://github.com/maria-namira/ahj-rxjs_poling#readme"
 }
