@@ -2,7 +2,7 @@
   "name": "ahj-rxjs_poling",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "postcss.config.js",
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "css-extract-plugin": "^0.0.1",
