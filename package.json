@@ -5,6 +5,7 @@
   "main": ".src/index.js",
   "devDependencies": {
     "@babel/core": "^7.21.3",
+    "eslint-plugin-react": "^7.32.2",
     "css-extract-plugin": "^0.0.1",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "html-webpack-plugin": "^5.5.0",
