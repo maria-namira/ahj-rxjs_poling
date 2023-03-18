@@ -6,15 +6,17 @@
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
-    "eslint-plugin-react": "^7.32.2",
     "css-extract-plugin": "^0.0.1",
+    "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
+    "eslint-plugin-react": "^7.32.2",
     "html-webpack-plugin": "^5.5.0",
     "mini": "^0.0.2",
+    "postcss-loader": "^7.1.0",
     "sass": "^1.59.3",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.13.0"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
@@ -45,7 +47,6 @@
     "eslint-plugin-react": "^7.32.2",
     "mini-css-extract-plugin": "^2.7.3",
     "rxjs": "^7.8.0",
-    "eslint-plugin-react": "^7.32.2",
     "rxjs-compat": "^6.6.7",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.2"
